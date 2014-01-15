@@ -1,0 +1,21 @@
+*fossil.vim* A wrapper for fossil scm
+
+Author:  J. Knight
+Licence: Same as vim (see |licence|)
+
+INTRODUCTION                                    *fossil*
+
+Helpful commands for using fossil scm from within vim
+
+COMMANDS                                        *fossil-commands*
+
+
+
+ABOUT                                           *fossil-about*
+
+You can grab the latest or report a bug at 
+
+http://github.com/mtvee/vim-fossil
+
+
+ vim:tw=78:et:ft=help:norl
