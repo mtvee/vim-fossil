@@ -5,11 +5,47 @@ Licence: Same as vim (see |licence|)
 
 INTRODUCTION                                    *fossil*
 
-Helpful commands for using fossil scm from within vim
+Helpful commands for using fossil scm from within vim. These are fairly
+thin wrappers around the fossil commands but add some syntax hilight
+happiness.
+
 
 COMMANDS                                        *fossil-commands*
 
+These are ther basic fossil commands that are wrapped.
 
+                                                *fossil-:Fdiff*
+:Fdiff          Run fossil diff
+
+                                                *fossil-:Fvdiff*
+:Fvdiff         Run fossil diff and output to vertical split
+
+                                                *fossil-:Fstatus*
+:Fstatus        Run fossil status
+
+                                                *fossil-:Fcommit*
+:Fcommit [args] Run fossil commit arg
+
+                                                *fossil-:Fchanges*
+:Fchanges       Run fossil changes
+
+                                                *fossil-:Ftimeline*
+:Ftimeline      Run fossil timeline
+
+                                                *fossil-:Fclone*
+:Fclone [args]  Run fossil clone arg
+
+                                                *fossil-:Fopen*
+:Fopen [args]   Run fossil open arg
+
+
+BINDINGS                                        *fossil-bindings*
+
+There are no bindings. You can add them yourself.
+
+TODO                                            *fossil-todo*
+
+It would be nice to edit the commit message in a buffer
 
 ABOUT                                           *fossil-about*
 
