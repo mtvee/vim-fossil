@@ -23,8 +23,17 @@ These are ther basic fossil commands that are wrapped.
                                                 *fossil-:Fstatus*
 :Fstatus        Run fossil status
 
+                                                *fossil-:Fextra*
+:Fextra        Run fossil status
+
                                                 *fossil-:Fcommit*
-:Fcommit [args] Run fossil commit arg
+:Fcommit [args] Run fossil commit args
+
+                                                *fossil-:Fadd*
+:Fadd [args] Run fossil add args
+
+                                                *fossil-:Faddr*
+:Faddr [args] Run fossil addremove args
 
                                                 *fossil-:Fchanges*
 :Fchanges       Run fossil changes

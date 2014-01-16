@@ -13,7 +13,10 @@ let g:loaded_fossil_scm = 1
 command! -nargs=0  Fdiff  :call s:FossilSDiff()
 command! -nargs=0  Fvdiff  :call s:FossilVDiff()
 command! -nargs=0  Fstatus  :call s:FossilStatus()
+command! -nargs=0  Fextra  :call s:FossilExtra()
 command! -nargs=+  Fcommit   !fossil commit -m <q-args>
+command! -nargs=+  Fadd   !fossil add <q-args>
+command! -nargs=+  Faddr   !fossil addremove <q-args>
 command! -nargs=0  Fchanges  !fossil changes
 command! -nargs=0  Ftimeline  :call s:FossilTimeline()
 command! -nargs=1  Fclone  !fossil clone <q-args>
@@ -50,6 +53,12 @@ endfunction
 function! s:FossilDiff() abort
   call s:createScratch()
   :silent r ! fossil diff
+endfunction
+
+function! s:FossilExtra() abort
+  :split
+  call s:createScratch()
+  :silent r ! fossil extra
 endfunction
 
 function! s:FossilStatus() abort
